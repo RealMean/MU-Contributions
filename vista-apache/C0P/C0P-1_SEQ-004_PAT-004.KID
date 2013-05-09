@@ -1,0 +1,1000 @@
+KIDS Distribution saved on Dec 24, 2012@15:04:29
+GetMeds6 for MU Data
+**KIDS**:C0P*1.0*4^
+
+**INSTALL NAME**
+C0P*1.0*4
+"BLD",7895,0)
+C0P*1.0*4^ORO ERX E-PRESCRIBING^0^3121224^y
+"BLD",7895,1,0)
+^^6^6^3121224^^^
+"BLD",7895,1,1,0)
+Contains the XML Template for use in C0P XML TEMPLATE file for NC WS Call 
+"BLD",7895,1,2,0)
+GetPatientFullMedicationHistory6 required for Meaningful Use Data. 
+"BLD",7895,1,3,0)
+Currently, the ePrescribing application uses 
+"BLD",7895,1,4,0)
+GetPatientFullMedicationHistory5 to get data. This patch adds the new 
+"BLD",7895,1,5,0)
+template for use with C0Q to get Meaningful Use data regarding percentage 
+"BLD",7895,1,6,0)
+of electronic transmission of prescriptions.
+"BLD",7895,4,0)
+^9.64PA^113059001^1
+"BLD",7895,4,113059001,0)
+113059001
+"BLD",7895,4,113059001,222)
+y^y^f^^n^^y^r^n
+"BLD",7895,4,113059001,224)
+I $P(^(0),U)="GETMEDS6"
+"BLD",7895,4,"B",113059001,113059001)
+
+"BLD",7895,6.3)
+8
+"BLD",7895,"ABPKG")
+n
+"BLD",7895,"KRN",0)
+^9.67PA^779.2^20
+"BLD",7895,"KRN",.4,0)
+.4
+"BLD",7895,"KRN",.401,0)
+.401
+"BLD",7895,"KRN",.402,0)
+.402
+"BLD",7895,"KRN",.403,0)
+.403
+"BLD",7895,"KRN",.5,0)
+.5
+"BLD",7895,"KRN",.84,0)
+.84
+"BLD",7895,"KRN",3.6,0)
+3.6
+"BLD",7895,"KRN",3.8,0)
+3.8
+"BLD",7895,"KRN",9.2,0)
+9.2
+"BLD",7895,"KRN",9.8,0)
+9.8
+"BLD",7895,"KRN",9.8,"NM",0)
+^9.68A^^0
+"BLD",7895,"KRN",19,0)
+19
+"BLD",7895,"KRN",19.1,0)
+19.1
+"BLD",7895,"KRN",101,0)
+101
+"BLD",7895,"KRN",409.61,0)
+409.61
+"BLD",7895,"KRN",771,0)
+771
+"BLD",7895,"KRN",779.2,0)
+779.2
+"BLD",7895,"KRN",870,0)
+870
+"BLD",7895,"KRN",8989.51,0)
+8989.51
+"BLD",7895,"KRN",8989.52,0)
+8989.52
+"BLD",7895,"KRN",8994,0)
+8994
+"BLD",7895,"KRN","B",.4,.4)
+
+"BLD",7895,"KRN","B",.401,.401)
+
+"BLD",7895,"KRN","B",.402,.402)
+
+"BLD",7895,"KRN","B",.403,.403)
+
+"BLD",7895,"KRN","B",.5,.5)
+
+"BLD",7895,"KRN","B",.84,.84)
+
+"BLD",7895,"KRN","B",3.6,3.6)
+
+"BLD",7895,"KRN","B",3.8,3.8)
+
+"BLD",7895,"KRN","B",9.2,9.2)
+
+"BLD",7895,"KRN","B",9.8,9.8)
+
+"BLD",7895,"KRN","B",19,19)
+
+"BLD",7895,"KRN","B",19.1,19.1)
+
+"BLD",7895,"KRN","B",101,101)
+
+"BLD",7895,"KRN","B",409.61,409.61)
+
+"BLD",7895,"KRN","B",771,771)
+
+"BLD",7895,"KRN","B",779.2,779.2)
+
+"BLD",7895,"KRN","B",870,870)
+
+"BLD",7895,"KRN","B",8989.51,8989.51)
+
+"BLD",7895,"KRN","B",8989.52,8989.52)
+
+"BLD",7895,"KRN","B",8994,8994)
+
+"BLD",7895,"QUES",0)
+^9.62^^
+"BLD",7895,"REQB",0)
+^9.611^^
+"DATA",113059001,38,0)
+GETMEDS6
+"DATA",113059001,38,1)
+https://preproduction.newcropaccounts.com/V7/webservices/Update1.asmx
+"DATA",113059001,38,2)
+https://preproduction.newcropaccounts.com/v7/WebServices/Update1.asmx?op=GetPatientFullMedicationHistory6
+"DATA",113059001,38,3,0)
+^113059001.01^33^33^3120528^^
+"DATA",113059001,38,3,1,0)
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+"DATA",113059001,38,3,2,0)
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+"DATA",113059001,38,3,3,0)
+<soap:Body><GetPatientFullMedicationHistory6
+"DATA",113059001,38,3,4,0)
+xmlns="https://secure.newcropaccounts.com/V7/webservices">
+"DATA",113059001,38,3,5,0)
+<credentials>
+"DATA",113059001,38,3,6,0)
+<PartnerName>demo
+"DATA",113059001,38,3,7,0)
+</PartnerName>
+"DATA",113059001,38,3,8,0)
+<Name>demo</Name>
+"DATA",113059001,38,3,9,0)
+<Password>demo</Password>
+"DATA",113059001,38,3,10,0)
+</credentials>
+"DATA",113059001,38,3,11,0)
+<accountRequest>
+"DATA",113059001,38,3,12,0)
+<AccountId>demo</AccountId>
+"DATA",113059001,38,3,13,0)
+<SiteId>demo</SiteId>
+"DATA",113059001,38,3,14,0)
+</accountRequest>
+"DATA",113059001,38,3,15,0)
+<patientRequest>
+"DATA",113059001,38,3,16,0)
+<PatientId>PATIENT1</PatientId>
+"DATA",113059001,38,3,17,0)
+</patientRequest>
+"DATA",113059001,38,3,18,0)
+<prescriptionHistoryRequest>
+"DATA",113059001,38,3,19,0)
+<StartHistory>2004-01-01T00:00:00</StartHistory>
+"DATA",113059001,38,3,20,0)
+<EndHistory>2010-01-01T00:00:00</EndHistory>
+"DATA",113059001,38,3,21,0)
+<PrescriptionStatus>C</PrescriptionStatus>
+"DATA",113059001,38,3,22,0)
+<PrescriptionSubStatus>S</PrescriptionSubStatus>
+"DATA",113059001,38,3,23,0)
+<PrescriptionArchiveStatus>N</PrescriptionArchiveStatus>
+"DATA",113059001,38,3,24,0)
+</prescriptionHistoryRequest>
+"DATA",113059001,38,3,25,0)
+<patientInformationRequester>
+"DATA",113059001,38,3,26,0)
+<UserType />
+"DATA",113059001,38,3,27,0)
+<UserId />
+"DATA",113059001,38,3,28,0)
+</patientInformationRequester>
+"DATA",113059001,38,3,29,0)
+<patientIdType />
+"DATA",113059001,38,3,30,0)
+<includeSchema />
+"DATA",113059001,38,3,31,0)
+</GetPatientFullMedicationHistory6>
+"DATA",113059001,38,3,32,0)
+</soap:Body>
+"DATA",113059001,38,3,33,0)
+</soap:Envelope>
+"DATA",113059001,38,4,0)
+^113059001.03^32^32^3120528^^
+"DATA",113059001,38,4,1,0)
+<?xml version="1.0" encoding="utf-8"?>
+"DATA",113059001,38,4,2,0)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+"DATA",113059001,38,4,3,0)
+<soap:Body>
+"DATA",113059001,38,4,4,0)
+<GetPatientFullMedicationHistory6 xmlns="https://secure.newcropaccounts.com/V7/webservices">
+"DATA",113059001,38,4,5,0)
+<credentials>
+"DATA",113059001,38,4,6,0)
+<PartnerName>@@ACCOUNT-PARTNERNAME@@</PartnerName>
+"DATA",113059001,38,4,7,0)
+<Name>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/credentials/Name@@</Name>
+"DATA",113059001,38,4,8,0)
+<Password>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/credentials/Password@@</Password>
+"DATA",113059001,38,4,9,0)
+</credentials>
+"DATA",113059001,38,4,10,0)
+<accountRequest>
+"DATA",113059001,38,4,11,0)
+<AccountId>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/accountRequest/AccountId@@</AccountId>
+"DATA",113059001,38,4,12,0)
+<SiteId>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/accountRequest/SiteId@@</SiteId>
+"DATA",113059001,38,4,13,0)
+</accountRequest>
+"DATA",113059001,38,4,14,0)
+<patientRequest>
+"DATA",113059001,38,4,15,0)
+<PatientId>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/patientRequest/PatientId@@</PatientId>
+"DATA",113059001,38,4,16,0)
+</patientRequest>
+"DATA",113059001,38,4,17,0)
+<prescriptionHistoryRequest>
+"DATA",113059001,38,4,18,0)
+<StartHistory>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/StartHistory@@</StartHistory>
+"DATA",113059001,38,4,19,0)
+<EndHistory>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/EndHistory@@</EndHistory>
+"DATA",113059001,38,4,20,0)
+<PrescriptionStatus>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/PrescriptionStatus@@</PrescriptionStatus>
+"DATA",113059001,38,4,21,0)
+<PrescriptionSubStatus>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/PrescriptionSubStatus@@</PrescriptionSubStatus>
+"DATA",113059001,38,4,22,0)
+<PrescriptionArchiveStatus>@@//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/PrescriptionArchiveStatus@@</PrescriptionArchiveStatus>
+"DATA",113059001,38,4,23,0)
+</prescriptionHistoryRequest>
+"DATA",113059001,38,4,24,0)
+<patientInformationRequester>
+"DATA",113059001,38,4,25,0)
+<UserType />
+"DATA",113059001,38,4,26,0)
+<UserId />
+"DATA",113059001,38,4,27,0)
+</patientInformationRequester>
+"DATA",113059001,38,4,28,0)
+<patientIdType />
+"DATA",113059001,38,4,29,0)
+<includeSchema>N</includeSchema>
+"DATA",113059001,38,4,30,0)
+</GetPatientFullMedicationHistory6>
+"DATA",113059001,38,4,31,0)
+</soap:Body>
+"DATA",113059001,38,4,32,0)
+</soap:Envelope>
+"DATA",113059001,38,5,0)
+^113059001.04^15^15
+"DATA",113059001,38,5,1,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/accountRequest/AccountId^ACCT
+"DATA",113059001,38,5,1,1)
+^^^ACCOUNT-ACCOUNTID
+"DATA",113059001,38,5,2,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/accountRequest/SiteId^ACCT
+"DATA",113059001,38,5,2,1)
+C0P SITE ID^113059002^2.3
+"DATA",113059001,38,5,3,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/credentials/Name^DFN
+"DATA",113059001,38,5,3,1)
+^^^ACCOUNT-NAME
+"DATA",113059001,38,5,4,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/credentials/PartnerName
+"DATA",113059001,38,5,5,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/credentials/Password^ACCT
+"DATA",113059001,38,5,5,1)
+^^^ACCOUNT-PASSWORD
+"DATA",113059001,38,5,6,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/patientRequest/PatientId^DFN
+"DATA",113059001,38,5,6,1)
+^^^PATIENT-PATIENTID
+"DATA",113059001,38,5,7,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/EndHistory^DFN
+"DATA",113059001,38,5,7,1)
+^^^PATIENT-ENDHISTORY
+"DATA",113059001,38,5,8,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/PrescriptionArchiveStatus^DFN
+"DATA",113059001,38,5,8,1)
+^^^PATIENT-ARCHIVESTATUS
+"DATA",113059001,38,5,9,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/PrescriptionStatus^DFN
+"DATA",113059001,38,5,9,1)
+^^^PATIENT-PRESCRIPTIONSTATUS
+"DATA",113059001,38,5,10,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/PrescriptionSubStatus^DFN
+"DATA",113059001,38,5,10,1)
+^^^PATIENT-PRESCRIPTIONSUBSTATUS
+"DATA",113059001,38,5,11,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/prescriptionHistoryRequest/StartHistory^DFN
+"DATA",113059001,38,5,11,1)
+^^^PATIENT-STARTHISTORY
+"DATA",113059001,38,5,12,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/patientInformationRequester/UserType^DUZ
+"DATA",113059001,38,5,12,1)
+^^^SUBSCRIBER-USERTYPE
+"DATA",113059001,38,5,13,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/patientInformationRequester/UserId^DUZ
+"DATA",113059001,38,5,13,1)
+^^^SUBSCRIBER-SID
+"DATA",113059001,38,5,14,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory6/patientIdType^DFN
+"DATA",113059001,38,5,14,1)
+^^^PATIENT-IDTYPE
+"DATA",113059001,38,5,15,0)
+ACCOUNT-PARTNERNAME^ACCT
+"DATA",113059001,38,5,15,1)
+^^^ACCOUNT-PARTNERNAME
+"DATA",113059001,38,6)
+1
+"DATA",113059001,38,7,0)
+^113059001.02^4^4^3120528^^
+"DATA",113059001,38,7,1,0)
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 2.0.50727.3074)
+"DATA",113059001,38,7,2,0)
+SOAPAction: "https://secure.newcropaccounts.com/V7/webservices/GetPatientFullMedicationHistory6"
+"DATA",113059001,38,7,3,0)
+Expect: 100-continue
+"DATA",113059001,38,7,4,0)
+Connection: Keep-Alive
+"DATA",113059001,38,8)
+text/xml; charset=utf-8
+"DATA",113059001,38,9)
+^10
+"FIA",113059001)
+C0P XML TEMPLATE
+"FIA",113059001,0)
+^C0PX(
+"FIA",113059001,0,0)
+113059001
+"FIA",113059001,0,1)
+y^y^f^^n^^y^r^n
+"FIA",113059001,0,10)
+
+"FIA",113059001,0,11)
+I $P(^(0),U)="GETMEDS6"
+"FIA",113059001,0,"RLRO")
+
+"FIA",113059001,0,"VR")
+1.0^C0P
+"FIA",113059001,113059001)
+0
+"FIA",113059001,113059001.01)
+0
+"FIA",113059001,113059001.02)
+0
+"FIA",113059001,113059001.03)
+0
+"FIA",113059001,113059001.04)
+0
+"FIA",113059001,113059001.05)
+0
+"IX",113059001,113059001,"C",0)
+113059001^C^Uniqueness Index for Key 'A' of File #113059001^R^^R^IR^I^113059001^^^^^LS
+"IX",113059001,113059001,"C",1)
+S ^C0PX("C",X(1),X(2),DA)=""
+"IX",113059001,113059001,"C",2)
+K ^C0PX("C",X(1),X(2),DA)
+"IX",113059001,113059001,"C",2.5)
+K ^C0PX("C")
+"IX",113059001,113059001,"C",11.1,0)
+^.114IA^2^2
+"IX",113059001,113059001,"C",11.1,1,0)
+1^F^113059001^.02^^1
+"IX",113059001,113059001,"C",11.1,2,0)
+2^F^113059001^.01^^2
+"IX",113059001,113059001,"XPATH",0)
+113059001^XPATH^WHOLE FILE XPATH INDEX FOR BINDINGS BY TEMPLATE^R^^F^IR^W^113059001.04^^^^^LS
+"IX",113059001,113059001,"XPATH",1)
+S ^C0PX("XPATH",$E(X,1,240),DA(1),DA)=""
+"IX",113059001,113059001,"XPATH",2)
+K ^C0PX("XPATH",$E(X,1,240),DA(1),DA)
+"IX",113059001,113059001,"XPATH",2.5)
+K ^C0PX("XPATH")
+"IX",113059001,113059001,"XPATH",11.1,0)
+^.114IA^1^1
+"IX",113059001,113059001,"XPATH",11.1,1,0)
+1^F^113059001.04^.01^240^1^F
+"IX",113059001,113059001.04,"B",0)
+113059001.04^B^REPLACEMENT FOR B INDEX TO INCREASE MAX LENGTH^R^^F^IR^I^113059001.04^^^^^LS
+"IX",113059001,113059001.04,"B",1)
+S ^C0PX(DA(1),5,"B",$E(X,1,240),DA)=""
+"IX",113059001,113059001.04,"B",2)
+K ^C0PX(DA(1),5,"B",$E(X,1,240),DA)
+"IX",113059001,113059001.04,"B",2.5)
+K ^C0PX(DA(1),5,"B")
+"IX",113059001,113059001.04,"B",11.1,0)
+^.114IA^1^1
+"IX",113059001,113059001.04,"B",11.1,1,0)
+1^F^113059001.04^.01^240^1^F
+"IX",113059001,113059001.04,"B",11.1,1,3)
+
+"KEY",113059001,113059001,"A",0)
+113059001^A^P^791
+"KEY",113059001,113059001,"A",2,0)
+^.312IA^2^2
+"KEY",113059001,113059001,"A",2,1,0)
+.01^113059001^2
+"KEY",113059001,113059001,"A",2,2,0)
+.02^113059001^1
+"KEYPTR",113059001,113059001,"A")
+113059001^C
+"MBREQ")
+0
+"PKG",214,-1)
+1^1
+"PKG",214,0)
+ORO ERX E-PRESCRIBING^C0P^Oroville Electronic Prescriptions
+"PKG",214,20,0)
+^9.402P^^
+"PKG",214,22,0)
+^9.49I^1^1
+"PKG",214,22,1,0)
+1.0^3121224^3121224^1
+"PKG",214,22,1,"PAH",1,0)
+4^3121224^1
+"PKG",214,22,1,"PAH",1,1,0)
+^^6^6^3121224
+"PKG",214,22,1,"PAH",1,1,1,0)
+Contains the XML Template for use in C0P XML TEMPLATE file for NC WS Call 
+"PKG",214,22,1,"PAH",1,1,2,0)
+GetPatientFullMedicationHistory6 required for Meaningful Use Data. 
+"PKG",214,22,1,"PAH",1,1,3,0)
+Currently, the ePrescribing application uses 
+"PKG",214,22,1,"PAH",1,1,4,0)
+GetPatientFullMedicationHistory5 to get data. This patch adds the new 
+"PKG",214,22,1,"PAH",1,1,5,0)
+template for use with C0Q to get Meaningful Use data regarding percentage 
+"PKG",214,22,1,"PAH",1,1,6,0)
+of electronic transmission of prescriptions.
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"SEC","^DIC",113059001,113059001,0,"AUDIT")
+@
+"SEC","^DIC",113059001,113059001,0,"DD")
+@
+"SEC","^DIC",113059001,113059001,0,"DEL")
+@
+"SEC","^DIC",113059001,113059001,0,"LAYGO")
+@
+"SEC","^DIC",113059001,113059001,0,"RD")
+@
+"SEC","^DIC",113059001,113059001,0,"WR")
+@
+"VER")
+8.0^22.0
+"^DD",113059001,113059001,0)
+FIELD^^5^13
+"^DD",113059001,113059001,0,"DDA")
+N
+"^DD",113059001,113059001,0,"DT")
+3091016
+"^DD",113059001,113059001,0,"IX","B",113059001,.01)
+
+"^DD",113059001,113059001,0,"NM","C0P XML TEMPLATE")
+
+"^DD",113059001,113059001,0,"PT",113059001,.03)
+
+"^DD",113059001,113059001,0,"PT",113059001.05,1)
+
+"^DD",113059001,113059001,0,"PT",113059003.02,2)
+
+"^DD",113059001,113059001,0,"PT",113059003.03,.01)
+
+"^DD",113059001,113059001,0,"PT",113059003.04,1)
+
+"^DD",113059001,113059001,0,"VRPK")
+C0P
+"^DD",113059001,113059001,.01,0)
+TEMPLATE NAME^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
+"^DD",113059001,113059001,.01,.1)
+NAME OF THE TEMPLATE
+"^DD",113059001,113059001,.01,1,0)
+^.1
+"^DD",113059001,113059001,.01,1,1,0)
+113059001^B
+"^DD",113059001,113059001,.01,1,1,1)
+S ^C0PX("B",$E(X,1,30),DA)=""
+"^DD",113059001,113059001,.01,1,1,2)
+K ^C0PX("B",$E(X,1,30),DA)
+"^DD",113059001,113059001,.01,3)
+TEMPLATE NAME
+"^DD",113059001,113059001,.01,"DT")
+3091015
+"^DD",113059001,113059001,.02,0)
+BELONGS TO WEB SERVICE^P113059003^C0PW(^6;1^Q
+"^DD",113059001,113059001,.02,.1)
+WEB SERVICE THAT THIS TEMPLATE BELONGS TO
+"^DD",113059001,113059001,.02,3)
+WEB SERVICE THAT THIS TEMPLATE BELONGS TO
+"^DD",113059001,113059001,.02,"DT")
+3091015
+"^DD",113059001,113059001,.03,0)
+REPLY TEMPLATE^P113059001^C0PX(^9;2^Q
+"^DD",113059001,113059001,.03,.1)
+TEMPLATE TO PROCESS THE REPLY FROM REQUEST TEMPLATE
+"^DD",113059001,113059001,.03,"DT")
+3091015
+"^DD",113059001,113059001,1,0)
+URL^F^^1;1^K:$L(X)>240!($L(X)<3) X
+"^DD",113059001,113059001,1,.1)
+URL FOR USE WITH THIS TEMPLATE
+"^DD",113059001,113059001,1,3)
+
+"^DD",113059001,113059001,1,21,0)
+^^1^1^3120504^
+"^DD",113059001,113059001,1,21,1,0)
+This is the Soap Request endpoint where the Soap Request must be sent.
+"^DD",113059001,113059001,1,"DT")
+3120504
+"^DD",113059001,113059001,2,0)
+WSDL URL^F^^2;1^K:$L(X)>240!($L(X)<3) X
+"^DD",113059001,113059001,2,.1)
+URL WHERE THE WSDL XML IS FOUND
+"^DD",113059001,113059001,2,3)
+URL WHERE THE WSDL XML IS FOUND
+"^DD",113059001,113059001,2,"DT")
+3091015
+"^DD",113059001,113059001,2.1,0)
+XML^113059001.01^^3;0
+"^DD",113059001,113059001,2.1,21,0)
+^^2^2^3120504^
+"^DD",113059001,113059001,2.1,21,1,0)
+Contains sample XML Soaps to send to the web service. These are then 
+"^DD",113059001,113059001,2.1,21,2,0)
+compiled to form the Template XML stored in the Template XML field.
+"^DD",113059001,113059001,2.1,"DT")
+3091015
+"^DD",113059001,113059001,2.2,0)
+XML HEADER^113059001.02^^7;0
+"^DD",113059001,113059001,2.2,21,0)
+^^2^2^3120504^
+"^DD",113059001,113059001,2.2,21,1,0)
+This contains the HTTP request headers for getting the XML field. It does 
+"^DD",113059001,113059001,2.2,21,2,0)
+not contain the XML <? xml ... ?> header.
+"^DD",113059001,113059001,2.2,"DT")
+3090925
+"^DD",113059001,113059001,2.3,0)
+MIME TYPE^F^^8;1^K:$L(X)>100!($L(X)<3) X
+"^DD",113059001,113059001,2.3,.1)
+MIME TYPE FOR THE XML MESSAGE
+"^DD",113059001,113059001,2.3,3)
+MIME TYPE FOR THE XML MESSAGE i.e. text/xml
+"^DD",113059001,113059001,2.3,"DT")
+3120504
+"^DD",113059001,113059001,2.4,0)
+PROXY SERVER^F^^8;2^K:$L(X)>100!($L(X)<3) X
+"^DD",113059001,113059001,2.4,.1)
+
+"^DD",113059001,113059001,2.4,3)
+OPTIONAL PROXY SERVER TO USE
+"^DD",113059001,113059001,2.4,"DT")
+3120504
+"^DD",113059001,113059001,2.5,0)
+XPATH REDUCTION STRING^F^^9;1^K:$L(X)>240!($L(X)<3) X
+"^DD",113059001,113059001,2.5,.1)
+
+"^DD",113059001,113059001,2.5,3)
+Answer must be 3-240 characters in length
+"^DD",113059001,113059001,2.5,21,0)
+^^1^1^3120504^
+"^DD",113059001,113059001,2.5,21,1,0)
+XPATH STRING TO REDUCE XPATH SIZE
+"^DD",113059001,113059001,2.5,"DT")
+3120504
+"^DD",113059001,113059001,3,0)
+TEMPLATE XML^113059001.03^^4;0
+"^DD",113059001,113059001,3,21,0)
+^^20^20^3120504^
+"^DD",113059001,113059001,3,21,1,0)
+This field holds a compliled XML template (generated by COMPILE^C0PSOAP) 
+"^DD",113059001,113059001,3,21,2,0)
+that contains prototype XML with @@ escaped fields for substitution 
+"^DD",113059001,113059001,3,21,3,0)
+processing by MAP^C0CXPATH
+"^DD",113059001,113059001,3,21,4,0)
+ 
+"^DD",113059001,113059001,3,21,5,0)
+Example of variable interpolation:
+"^DD",113059001,113059001,3,21,6,0)
+<Name>@@PATIENTNAME@@</Name>
+"^DD",113059001,113059001,3,21,7,0)
+ 
+"^DD",113059001,113059001,3,21,8,0)
+becomes:
+"^DD",113059001,113059001,3,21,9,0)
+ 
+"^DD",113059001,113059001,3,21,10,0)
+<Name>Mouse,Mickey</Name>
+"^DD",113059001,113059001,3,21,11,0)
+ 
+"^DD",113059001,113059001,3,21,12,0)
+Example of field interpolation based on an XPATH:
+"^DD",113059001,113059001,3,21,13,0)
+<PatientID>
+"^DD",113059001,113059001,3,21,14,0)
+//soap:Envelope/soap:Body/GetPatientFullMedicationHistory5/patientRequest
+"^DD",113059001,113059001,3,21,15,0)
+/PatientId
+"^DD",113059001,113059001,3,21,16,0)
+</PatientID>
+"^DD",113059001,113059001,3,21,17,0)
+ 
+"^DD",113059001,113059001,3,21,18,0)
+becomes:
+"^DD",113059001,113059001,3,21,19,0)
+ 
+"^DD",113059001,113059001,3,21,20,0)
+<PatientID>98129749824</PatientID) 
+"^DD",113059001,113059001,3,"DT")
+3091015
+"^DD",113059001,113059001,4,0)
+BINDING^113059001.04^^5;0
+"^DD",113059001,113059001,4,21,0)
+^^5^5^3120507^
+"^DD",113059001,113059001,4,21,1,0)
+This multiple contains data which is used to drive the XML Template 
+"^DD",113059001,113059001,4,21,2,0)
+Processor to replace @@...@@ elements in the Template XML with actual 
+"^DD",113059001,113059001,4,21,3,0)
+data. After actual data is in place, it is sent over to the WebService.
+"^DD",113059001,113059001,4,21,4,0)
+ 
+"^DD",113059001,113059001,4,21,5,0)
+The code that does the processing is in BIND^C0PMAIN.
+"^DD",113059001,113059001,4,"DT")
+3091015
+"^DD",113059001,113059001,5,0)
+INCLUDE TEMPLATE^113059001.05^^10;0
+"^DD",113059001,113059001,5,21,0)
+^^4^4^3120507^
+"^DD",113059001,113059001,5,21,1,0)
+This multiple will allow a more dynamic slicing of Template XMLs where 
+"^DD",113059001,113059001,5,21,2,0)
+specific sections can be included as part of a bigger XML.
+"^DD",113059001,113059001,5,21,3,0)
+ 
+"^DD",113059001,113059001,5,21,4,0)
+Currently not used in eRx 1.0.
+"^DD",113059001,113059001.01,0)
+XML SUB-FIELD^^.01^1
+"^DD",113059001,113059001.01,0,"DT")
+3090913
+"^DD",113059001,113059001.01,0,"NM","XML")
+
+"^DD",113059001,113059001.01,0,"UP")
+113059001
+"^DD",113059001,113059001.01,.01,0)
+XML^WLx^^0;1
+"^DD",113059001,113059001.01,.01,.1)
+
+"^DD",113059001,113059001.01,.01,3)
+
+"^DD",113059001,113059001.01,.01,"DT")
+3120504
+"^DD",113059001,113059001.02,0)
+XML HEADER SUB-FIELD^^.01^1
+"^DD",113059001,113059001.02,0,"DT")
+3090925
+"^DD",113059001,113059001.02,0,"NM","XML HEADER")
+
+"^DD",113059001,113059001.02,0,"UP")
+113059001
+"^DD",113059001,113059001.02,.01,0)
+XML HEADERS^WLx^^0;1
+"^DD",113059001,113059001.02,.01,.1)
+
+"^DD",113059001,113059001.02,.01,3)
+
+"^DD",113059001,113059001.02,.01,"DT")
+3120504
+"^DD",113059001,113059001.03,0)
+TEMPLATE XML SUB-FIELD^^.01^1
+"^DD",113059001,113059001.03,0,"DT")
+3090913
+"^DD",113059001,113059001.03,0,"NM","TEMPLATE XML")
+
+"^DD",113059001,113059001.03,0,"UP")
+113059001
+"^DD",113059001,113059001.03,.01,0)
+TEMPLATE XML^WLx^^0;1
+"^DD",113059001,113059001.03,.01,.1)
+
+"^DD",113059001,113059001.03,.01,3)
+
+"^DD",113059001,113059001.03,.01,"DT")
+3120504
+"^DD",113059001,113059001.04,0)
+BINDING SUB-FIELD^^4^8
+"^DD",113059001,113059001.04,0,"DT")
+3091015
+"^DD",113059001,113059001.04,0,"NM","BINDING")
+
+"^DD",113059001,113059001.04,0,"UP")
+113059001
+"^DD",113059001,113059001.04,.01,0)
+XPATH^MF^^0;1^K:$L(X)>240!($L(X)<3) X
+"^DD",113059001,113059001.04,.01,.1)
+BINDING XPATH
+"^DD",113059001,113059001.04,.01,1,0)
+^.1^^0
+"^DD",113059001,113059001.04,.01,3)
+XPATH or Variable Name
+"^DD",113059001,113059001.04,.01,21,0)
+^^1^1^3120507^
+"^DD",113059001,113059001.04,.01,21,1,0)
+Contains either the XPATH or variable name in @@..@@ to substitute.
+"^DD",113059001,113059001.04,.01,"DT")
+3120507
+"^DD",113059001,113059001.04,.05,0)
+INDEXED BY^S^DFN:PATIENT;DUZ:PROVIDER;ACCT:ACCOUNT;LOC:LOCATION;^0;2^Q
+"^DD",113059001,113059001.04,.05,.1)
+
+"^DD",113059001,113059001.04,.05,3)
+INDEXED BY - DFN OR DUZ OR ACCOUNT OR LOCATION
+"^DD",113059001,113059001.04,.05,21,0)
+^^2^2^3120507^
+"^DD",113059001,113059001.04,.05,21,1,0)
+This functions almost as a 'variable pointer' for the code. The code 
+"^DD",113059001,113059001.04,.05,21,2,0)
+uses this to figure out which file to retrieve data from.
+"^DD",113059001,113059001.04,.05,"DT")
+3120507
+"^DD",113059001,113059001.04,1,0)
+FILEMAN FIELD NAME^F^^1;1^K:$L(X)>80!($L(X)<3) X
+"^DD",113059001,113059001.04,1,.1)
+NAME OF FILEMAN FIELD
+"^DD",113059001,113059001.04,1,3)
+FILEMAN FIELD NAME
+"^DD",113059001,113059001.04,1,21,0)
+^^2^2^3120507^
+"^DD",113059001,113059001.04,1,21,1,0)
+This field is for documentation only; the actual field is in #1.2 FILEMAN
+"^DD",113059001,113059001.04,1,21,2,0)
+FIELD NUMBER.
+"^DD",113059001,113059001.04,1,"DT")
+3120507
+"^DD",113059001,113059001.04,1.1,0)
+FILEMAN FILE POINTER^P1'^DIC(^1;2^Q
+"^DD",113059001,113059001.04,1.1,.1)
+
+"^DD",113059001,113059001.04,1.1,3)
+Fileman File
+"^DD",113059001,113059001.04,1.1,21,0)
+^^1^1^3120507^
+"^DD",113059001,113059001.04,1.1,21,1,0)
+Fileman file to retrieve data from for the element.
+"^DD",113059001,113059001.04,1.1,"DT")
+3120507
+"^DD",113059001,113059001.04,1.2,0)
+FILEMAN FIELD NUMBER^NJ22,9^^1;3^K:+X'=X!(X>999999999999)!(X<.000000001)!(X?.E1"."10.N) X
+"^DD",113059001,113059001.04,1.2,.1)
+
+"^DD",113059001,113059001.04,1.2,3)
+FILEMAN FIELD NUMBER
+"^DD",113059001,113059001.04,1.2,21,0)
+^^1^1^3120507^
+"^DD",113059001,113059001.04,1.2,21,1,0)
+Field to use for the file entered (1.1  FILEMAN FILE POINTER)
+"^DD",113059001,113059001.04,1.2,"DT")
+3120507
+"^DD",113059001,113059001.04,2,0)
+VARIABLE NAME^F^^1;4^K:$L(X)>80!($L(X)<3) X
+"^DD",113059001,113059001.04,2,.1)
+
+"^DD",113059001,113059001.04,2,3)
+Name of a runtime variable
+"^DD",113059001,113059001.04,2,21,0)
+^^3^3^3120507^
+"^DD",113059001,113059001.04,2,21,1,0)
+Runtime Variable to use for the data (instead of retrieving data from 
+"^DD",113059001,113059001.04,2,21,2,0)
+Fileman File/Field). If this is specified, it override Fileman File/Field 
+"^DD",113059001,113059001.04,2,21,3,0)
+data in the runtime processor.
+"^DD",113059001,113059001.04,2,"DT")
+3120507
+"^DD",113059001,113059001.04,3,0)
+SQLI FIELD NAME^F^^2;1^K:$L(X)>80!($L(X)<3) X
+"^DD",113059001,113059001.04,3,.1)
+
+"^DD",113059001,113059001.04,3,3)
+
+"^DD",113059001,113059001.04,3,21,0)
+^^1^1^3120507^
+"^DD",113059001,113059001.04,3,21,1,0)
+Not used in eRx.
+"^DD",113059001,113059001.04,3,"DT")
+3120507
+"^DD",113059001,113059001.04,4,0)
+CCR VARIABLE^P170^C0CDIC(170,^2;2^Q
+"^DD",113059001,113059001.04,4,.1)
+
+"^DD",113059001,113059001.04,4,21,0)
+^^1^1^3120507^
+"^DD",113059001,113059001.04,4,21,1,0)
+Pointer to the CCR dictionary for binding. Not used in eRx.
+"^DD",113059001,113059001.04,4,"DT")
+3120507
+"^DD",113059001,113059001.05,0)
+INCLUDE TEMPLATE SUB-FIELD^^1^2
+"^DD",113059001,113059001.05,0,"DT")
+3091016
+"^DD",113059001,113059001.05,0,"IX","B",113059001.05,.01)
+
+"^DD",113059001,113059001.05,0,"NM","INCLUDE TEMPLATE")
+
+"^DD",113059001,113059001.05,0,"UP")
+113059001
+"^DD",113059001,113059001.05,.01,0)
+INCLUDE TEMPLATE NAME^MF^^0;1^K:$L(X)>30!($L(X)<3) X
+"^DD",113059001,113059001.05,.01,.1)
+
+"^DD",113059001,113059001.05,.01,1,0)
+^.1
+"^DD",113059001,113059001.05,.01,1,1,0)
+113059001.05^B
+"^DD",113059001,113059001.05,.01,1,1,1)
+S ^C0PX(DA(1),10,"B",$E(X,1,30),DA)=""
+"^DD",113059001,113059001.05,.01,1,1,2)
+K ^C0PX(DA(1),10,"B",$E(X,1,30),DA)
+"^DD",113059001,113059001.05,.01,3)
+Templates to be included during processing
+"^DD",113059001,113059001.05,.01,"DT")
+3120507
+"^DD",113059001,113059001.05,1,0)
+INCLUDE TEMPLATE POINTER^P113059001^C0PX(^0;2^Q
+"^DD",113059001,113059001.05,1,.1)
+
+"^DD",113059001,113059001.05,1,3)
+Pointer to the Included Template
+"^DD",113059001,113059001.05,1,"DT")
+3120507
+"^DIC",113059001,113059001,0)
+C0P XML TEMPLATE^113059001
+"^DIC",113059001,113059001,0,"GL")
+^C0PX(
+"^DIC",113059001,113059001,"%",0)
+^1.005^^0
+"^DIC",113059001,113059001,"%D",0)
+^^35^35^3121224^^
+"^DIC",113059001,113059001,"%D",1,0)
+Copyright 2009 George Lilly.  
+"^DIC",113059001,113059001,"%D",2,0)
+ 
+"^DIC",113059001,113059001,"%D",3,0)
+   Licensed under the Apache License, Version 2.0 (the "License");
+"^DIC",113059001,113059001,"%D",4,0)
+   you may not use this file except in compliance with the License.
+"^DIC",113059001,113059001,"%D",5,0)
+   You may obtain a copy of the License at
+"^DIC",113059001,113059001,"%D",6,0)
+ 
+"^DIC",113059001,113059001,"%D",7,0)
+       http://www.apache.org/licenses/LICENSE-2.0
+"^DIC",113059001,113059001,"%D",8,0)
+ 
+"^DIC",113059001,113059001,"%D",9,0)
+   Unless required by applicable law or agreed to in writing, software
+"^DIC",113059001,113059001,"%D",10,0)
+   distributed under the License is distributed on an "AS IS" BASIS,
+"^DIC",113059001,113059001,"%D",11,0)
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+"^DIC",113059001,113059001,"%D",12,0)
+   See the License for the specific language governing permissions and
+"^DIC",113059001,113059001,"%D",13,0)
+   limitations under the License.
+"^DIC",113059001,113059001,"%D",14,0)
+ 
+"^DIC",113059001,113059001,"%D",15,0)
+This file was created by George Lilly for the Oroville Hospital
+"^DIC",113059001,113059001,"%D",16,0)
+ePrescribing project. 
+"^DIC",113059001,113059001,"%D",17,0)
+ 
+"^DIC",113059001,113059001,"%D",18,0)
+It stores XML templates that define web services for use in VistA. 
+"^DIC",113059001,113059001,"%D",19,0)
+ 
+"^DIC",113059001,113059001,"%D",20,0)
+Each template has a name and a pointer to a Web Service record in the C0P
+"^DIC",113059001,113059001,"%D",21,0)
+WEB SERVICE file #113059003. For templates that define external web
+"^DIC",113059001,113059001,"%D",22,0)
+services, there is automation to generate most of this file. If a template
+"^DIC",113059001,113059001,"%D",23,0)
+record has a name and a pointer to its webservice, and a URL to its WSDL
+"^DIC",113059001,113059001,"%D",24,0)
+definition on the external web service, TBLD^C0PWS1(DA) will download the
+"^DIC",113059001,113059001,"%D",25,0)
+WSDL xml, put it in the Raw XML WP field, call INDEX^C0CXPATH to generate
+"^DIC",113059001,113059001,"%D",26,0)
+a template, store the template in the Template WP field, and then generate
+"^DIC",113059001,113059001,"%D",27,0)
+a XPath binding subfile for each XPath in the xml. It will also look to
+"^DIC",113059001,113059001,"%D",28,0)
+see if the XPath binding has already been created for a different template
+"^DIC",113059001,113059001,"%D",29,0)
+pointing to the same web service, and if so, will copy the VistA bindings
+"^DIC",113059001,113059001,"%D",30,0)
+from that definition. Often, multiple templates for the same web service
+"^DIC",113059001,113059001,"%D",31,0)
+will have many XPath definitions in common. So when adding a new web
+"^DIC",113059001,113059001,"%D",32,0)
+service to the system, start with one template, run TBLKD^C0PWS1, and then
+"^DIC",113059001,113059001,"%D",33,0)
+add the VistA binding by hand. After the first one is completed, add the
+"^DIC",113059001,113059001,"%D",34,0)
+other templates and avoid having to enter the common XPath bindings again
+"^DIC",113059001,113059001,"%D",35,0)
+by hand.
+"^DIC",113059001,"B","C0P XML TEMPLATE",113059001)
+
+**END**
+**END**

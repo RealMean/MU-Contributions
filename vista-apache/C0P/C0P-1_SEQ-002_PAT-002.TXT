@@ -1,0 +1,38 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: OCT 18, 2012                      Designation: C0P*1*2  TEST v
+Package : ORO ERX E-PRESCRIBING             Priority   : MANDATORY
+Version : 1                                 Status     : UNDER DEVELOPMENT
+=============================================================================
+
+Subject:  RxNorm Files for e-Prescribing
+
+Category:  DATA DICTIONARY
+           OTHER
+
+Description:
+===========
+ 
+
+
+Routine Information:
+====================
+
+
+The second line of each of these routines now looks like:
+    ;;1.0;C0P;**[Patch List]**;Apr 25, 2012;Build 7
+
+The checksums below are new checksums, and
+ can be checked with CHECK1^XTSUMBLD.
+
+Routine Name: C0PKIDS
+    Before:       n/a   After:B189289667  
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   JUN  8,2012
+  Completed By:                        Date Completed:   
+  Released By :                        Date Released :   
+=============================================================================
+

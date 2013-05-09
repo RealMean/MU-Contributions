@@ -1,0 +1,145 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: OCT 18, 2012                      Designation: C0P*1*4
+Package : ORO ERX E-PRESCRIBING             Priority   : MANDATORY
+Version : 1                                 Status     : COMPLETE/NOT RELEASED
+=============================================================================
+
+Subject:  New Web Service XML Template for GetPatientFullMedicationHistory6 for 
+
+Category:  DATA DICTIONARY
+
+Description:
+===========
+ 
+ Source, Copyright, & Licensing:
+ ===============================
+ This patch to WorldVistA 2.0 was produced in the e-Prescribing Gold 
+Environment by George Lilly on 11 June 2012 and released through VISTA
+Forum.
+ 
+This build contains copyrighted content. Only use if you have an
+ agreement with New Crop and Oroville Hospital.
+ 
+The ORO eRx package is licensed under Apache 2.0.
+http://www.apache.org/licenses/LICENSE-2.0.html
+ 
+ Functionality:
+ ==============
+Contains the XML Template for use in C0P XML TEMPLATE file for NC WS Call 
+GetPatientFullMedicationHistory6 required for Meaningful Use Data. 
+Currently, the ePrescribing application uses 
+GetPatientFullMedicationHistory5 to get data. This patch adds the new 
+template for use with C0Q to get Meaningful Use data regarding percentage 
+of electronic transmission of prescriptions. It is anticipated that the 
+eRx package will use this template.
+ 
+ Support Tickets:
+[None] 
+ 
+ Package Elements:
+ =================
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+ 
+113059001   C0P XML TEMPLATE               YES   YES   YES     REPL  NO    NO
+  DATA SCREEN: I $P(^(0),U)="GETMEDS6"
+ 
+ Documentation:
+ - None available at this time. 
+ 
+ Test Sites:
+ ===========
+ - None at this time.
+ tested by George Lilly on smart2 (dEWDrop) environment
+ 
+ Compliance:
+ ===========
+ This software complies with the VA MUMPS Programming Standards and
+ Conventions (version 3 April 2007).
+ 
+ This software is 508 compliant.
+ 
+ Blood Bank Clearance - June 11, 2008
+ This patch does not interfere with the blood bank software.
+ 
+ Installation Instructions:
+ ==========================
+ Install Time - less than 1 minute
+ Users can remain on the system
+ 
+ 1.  LOAD TRANSPORT GLOBAL
+ 
+     Choose the PackMan message containing this patch and invoke the
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.
+ 
+ 2.  START UP KIDS
+ 
+      Start up the Kernel Installation and Distribution System Menu
+      [XPD MAIN]:
+ 
+           Edits and Distribution ...
+           Utilities ...
+           Installation ...
+ 
+ Select Kernel Installation & Distribution System Option: INStallation
+                                                          ---
+           Load a Distribution
+           Print Transport Global
+           Compare Transport Global to Current System
+           Verify Checksums in Transport Global
+           Install Package(s)
+           Restart Install of Package(s)
+           Unload a Distribution
+           Backup a Transport Global
+ 
+ Select Installation Option:
+ 
+ 3.  Select Installation Option:
+ 
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+             NAME, enter C0P*1.0*4):
+ 
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+ 
+ 4.  Select Installation Option: Install Package(s)
+ 
+     **This is the step to start the installation of this KIDS patch:
+ 
+     a.  Choose the Install Package(s) option to start the patch install
+         and enter "C0P*1.0*4" at the INSTALL NAME prompt.
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+         Install? NO//'  answer NO
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+         NO//'  answer NO
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols? NO//'  answer NO
+ 
+ After installation, no tasks are necessary.
+
+
+Routine Information:
+====================
+
+
+No routines included.
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   JUN 11,2012
+  Completed By:   LILLY,GEORGE         Date Completed:   JUN 14,2012
+  Released By :                        Date Released :   
+=============================================================================
+

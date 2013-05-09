@@ -1,0 +1,1244 @@
+These are install instructions for the CCD/CCR GENERATATION UTILTIES package.
+
+Before you install, you must install the pre-requisites.
+
+NHIN 1.0
+NHIN*1.0*1
+
+They can be found at the VA VISTA FOIA site. For convenience, here are the URLs.
+
+https://downloads.va.gov/files/FOIA/Software/Patches_By_Application/NHIN-National%20Health%20Info%20Network/NHIN1_0.KID
+https://downloads.va.gov/files/FOIA/Software/Patches_By_Application/NHIN-National%20Health%20Info%20Network/NHIN-1_SEQ-1_PAT-1.KID
+
+These URLs are subject to change.
+
+Download these KIDS file to an easily accessible directory.
+CCD-CCR_GENERATION_UTILITIES_1P2.KID
+C0CRXN_DEF_0002.kids
+C0CRXN_DATA_072011_0100.gkids.tgz
+
+Don't forget to untar and ungunzip the last file.
+
+Run as a user with XUPROG key, enter the KIDS menu (XPD MAIN MENU) and choose
+the installation menu. Choose option 1 to load and option 6 to install. Run
+options 2, 3, 4, and 5 if you need to.
+
+When running the installation, you will see this error for the first build
+
+'''
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+'''
+
+This error is known and will be resovled with a future release. It's only an
+install time error and will not affect the operation of the package. It can
+be safely ignored.
+
+Here is a transcript of the installation.
+
+Select Installation Option: 1  Load a Distribution
+Enter a Host File: CCD-CCR_GENERATION_UTILITIES_1P2.KID
+
+KIDS Distribution saved on Jun 25, 2012@10:01:50
+Comment: Changed name to full Package Name rather than nmsp
+
+This Distribution contains Transport Globals for the following Package(s):
+   CCD/CCR GENERATION UTILITIES 1.2
+Distribution OK!
+
+Want to Continue with Load? YES// 
+Loading Distribution...
+
+Build CCD/CCR GENERATION UTILITIES 1.2 has an Enviromental Check Routine
+Want to RUN the Environment Check Routine? YES// 
+   CCD/CCR GENERATION UTILITIES 1.2
+Will first run the Environment Check Routine, C0CENV
+
+ 
+                        --- Environment Check is Ok ---                         
+Use INSTALL NAME: CCD/CCR GENERATION UTILITIES 1.2 to install this Distribution.
+
+
+Select Installation Option: 6  Install Package(s)
+Select INSTALL NAME:    CCD/CCR GENERATION UTILITIES 1.2     Loaded from Distrib
+ution     Loaded from Distribution  10/2/12@11:25:29
+     => Changed name to full Package Name rather than nmsp  ;Created on Jun 25
+
+This Distribution was loaded on Oct 02, 2012@11:25:29 with header of 
+   Changed name to full Package Name rather than nmsp  ;Created on Jun 25, 2012@
+10:01:50
+   It consisted of the following Install(s):
+CCD/CCR GENERATION UTILITIES 1.2
+
+   Checking CCD/CCR GENERATION UTILITIES 1.2 for overlap with VOE 1.0 .... OK
+            No overlap found
+
+
+   Checking CCD/CCR GENERATION UTILITIES 1.2 for overlap with VOE 1.1 .... OK
+            No overlap found
+
+
+   Checking CCD/CCR GENERATION UTILITIES 1.2 for overlap with NO HOME 1.0 .... O
+K
+            No overlap found
+
+Checking Install for Package CCD/CCR GENERATION UTILITIES 1.2
+Will first run the Environment Check Routine, C0CENV
+
+ 
+                        --- Environment Check is Ok ---                         
+
+Install Questions for CCD/CCR GENERATION UTILITIES 1.2
+
+Incoming Files:
+
+
+   170       CCR DICTIONARY  (including data)
+
+
+   170.101   CCR NODE TYPE  (including data)
+
+
+   170.9     C0C PARAMETERS  (including data)
+
+
+   171.101   CCR E2
+
+
+   171.401   CCR SOURCE
+
+
+   175       C0C INCOMING XML
+
+
+   176.112   C0C RXNORM VUID EXPANSION  (including data)
+
+
+   177.101   CCR PATIENT SUBSCRIPTIONS
+
+
+   177.201   CCR SUBSCRIBERS  (including data)
+
+
+   177.301   C0C BATCH CONTROL
+
+
+   178.101   C0C XDS PROTOTYPE  (including data)
+
+
+   178.301   C0C XML MISC  (including data)
+
+Want KIDS to Rebuild Menu Trees Upon Completion of Install? NO// 
+
+
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+
+DEVICE: HOME// phome  HOME PRINTER
+
+ 
+ Install Started for CCD/CCR GENERATION UTILITIES 1.2 : 
+               Oct 02, 2012@11:25:45
+ 
+Build Distribution Date: Jun 25, 2012
+ 
+ Installing Routines:...........................................................
+.....................
+               Oct 02, 2012@11:25:47
+ 
+ Running Pre-Install Routine: PRE^C0CENV.
+ 
+                         No action need for pre-install                         
+ 
+ Installing Data Dictionaries: .............
+               Oct 02, 2012@11:25:47
+ 
+ Installing Data: 
+ 
+** ERROR IN DATA FOR FILE # 170 **
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+
+The input parameter that identifies the RECORD is missing or invalid.
+
+The entry does not exist.
+               Oct 02, 2012@11:26:19
+ 
+ Installing PACKAGE COMPONENTS: 
+ 
+ Installing REMOTE PROCEDURE..
+ 
+ Installing OPTION...........
+               Oct 02, 2012@11:26:19
+ 
+ Running Post-Install Routine: POST^C0CENV.
+ 
+ Updating Routine file......
+ 
+ Updating KIDS files.......
+ 
+ CCD/CCR GENERATION UTILITIES 1.2 Installed. 
+               Oct 02, 2012@11:26:20
+ 
+ NO Install Message sent 
+
+--------------------------------
+
+Select Installation Option: 1  Load a Distribution
+Enter a Host File: C0CRXN_DEF_0002.kids
+
+KIDS Distribution saved on Aug 13, 2011@13:28:22
+Comment: RxNorm Definition, v 0.2
+
+This Distribution contains Transport Globals for the following Package(s):
+Build C0CRXN DEF 0.2 has been loaded before, here is when: 
+      C0CRXN DEF 0.2   Install Completed
+                       was loaded on Apr 09, 2012@11:15:41
+OK to continue with Load? NO// YES
+
+Distribution OK!
+
+Want to Continue with Load? YES// 
+Loading Distribution...
+
+   C0CRXN DEF 0.2
+Use INSTALL NAME: C0CRXN DEF 0.2 to install this Distribution.
+
+
+Select Installation Option: 6  Install Package(s)
+Select INSTALL NAME:    C0CRXN DEF 0.2     Loaded from Distribution     Loaded f
+rom Distribution  10/3/12@14:40:44
+     => RxNorm Definition, v 0.2  ;Created on Aug 13, 2011@13:28:22
+
+This Distribution was loaded on Oct 03, 2012@14:40:44 with header of 
+   RxNorm Definition, v 0.2  ;Created on Aug 13, 2011@13:28:22
+   It consisted of the following Install(s):
+ C0CRXN DEF 0.2
+
+   Checking C0CRXN DEF 0.2 for overlap with VOE 1.0 .. OK
+            No overlap found
+
+
+   Checking C0CRXN DEF 0.2 for overlap with VOE 1.1 .. OK
+            No overlap found
+
+
+   Checking C0CRXN DEF 0.2 for overlap with NO HOME 1.0 .. OK
+            No overlap found
+
+Checking Install for Package C0CRXN DEF 0.2
+
+Install Questions for C0CRXN DEF 0.2
+
+Incoming Files:
+
+
+   176.001   RXNORM CONCEPTS
+Note:  You already have the 'RXNORM CONCEPTS' File.
+
+
+   176.002   RXNORM NDC TO RXCUI
+Note:  You already have the 'RXNORM NDC TO RXCUI' File.
+
+
+   176.003   RXNORM SOURCES
+Note:  You already have the 'RXNORM SOURCES' File.
+
+
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+
+DEVICE: HOME// PHOME  HOME PRINTER
+
+ 
+ Install Started for C0CRXN DEF 0.2 : 
+               Oct 03, 2012@14:40:50
+ 
+Build Distribution Date: Aug 13, 2011
+ 
+ Installing Routines:..
+               Oct 03, 2012@14:40:50
+ 
+ Installing Data Dictionaries: ....
+               Oct 03, 2012@14:40:50
+ 
+ Updating Routine file......
+ 
+ Updating KIDS files.....
+ 
+ C0CRXN DEF 0.2 Installed. 
+               Oct 03, 2012@14:40:50
+ 
+ No link to PACKAGE file
+ 
+ NO Install Message sent 
+
+----------------------------------
+
+Select Installation Option: 1  Load a Distribution
+Enter a Host File: C0CRXN_DATA_072011_0100.gkids
+
+KIDS Distribution saved on Aug 13, 2011@13:29:12
+Comment: RxNorm July 2011 Release
+
+This Distribution contains Transport Globals for the following Package(s):
+   C0CRXN DATA 072011 1.0
+Distribution OK!
+
+This is a Global Distribution. It contains Global(s) that will
+update your system at this time. The following Global(s) will be installed:
+
+^C0CRXN(176.001)Replace
+^C0CRXN(176.002)Replace
+^C0CRXN(176.003)Replace
+
+If you continue with the Load, the Global(s) will be
+Installed at this time.
+
+Want to Continue with Load? YES// y  YES
+Loading Distribution...
+
+   C0CRXN DATA 072011 1.0
+
+Globals will now be installed, OK? YES// 
+
+ 
+ Install Started for C0CRXN DATA 072011 1.0 : 
+               Oct 03, 2012@14:43:17
+ 
+ Installing Globals:
+ 
+ ^C0CRXN(176.001)
+               Oct 03, 2012@14:45:15
+ 
+ ^C0CRXN(176.002)
+               Oct 03, 2012@14:45:52
+ 
+ ^C0CRXN(176.003)
+               Oct 03, 2012@14:45:52
+ 
+ Updating KIDS files... 
+ 
+ No link to PACKAGE file
+ 
+ NO Install Message sent to FORUM 
+
+
+ 
+ C0CRXN DATA 072011 1.0 Installed.
+               Oct 03, 2012@14:45:52
+

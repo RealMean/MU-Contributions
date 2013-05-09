@@ -1,0 +1,6 @@
+Install both files into VISTA for RxNorm.
+
+First one is data definition, second one is the globals. The data will take about 3 minutes to load.
+
+C0CRXN_DEF_0002.kids
+C0CRXN_DATA_072011_0100.gkids (may need to be untarred first).

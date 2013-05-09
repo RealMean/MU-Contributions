@@ -1,0 +1,152 @@
+PACKAGE: ORO ERX E-PRESCRIBING 1.0     Oct 18, 2012 12:18 pm      PAGE 1
+-------------------------------------------------------------------------------
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: NO
+NATIONAL PACKAGE: ORO ERX E-PRESCRIBING          ALPHA/BETA TESTING: NO
+
+DESCRIPTION:
+Written on April 25th 2012.
+ 
+   Copyright 2012 George Lilly.  
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+ 
+This is the 1.0 release of the Oroville e-Prescribing Package.
+ 
+This package works as a web service communication framework to New Crop 
+(http://www.newcroprx.com/) to send and receive drug data.
+ 
+It depends on the following packages/installations:
+- EWD (for Web Services communication in Mumps)
+- C0C (CCR/CCD Extraction, for metadata purposes)
+ 
+Other KIDS files may be supplied to make this work if they not part of
+this package:
+- New Crop Web Services Data
+- RxNorm Full Concepts File for E-Rx
+- First DataBank Drugs and Allergies
+
+ENVIRONMENT CHECK: C0PKIDS                       DELETE ENV ROUTINE: No
+ PRE-INIT ROUTINE:                          DELETE PRE-INIT ROUTINE: 
+POST-INIT ROUTINE: POST^C0PKIDS            DELETE POST-INIT ROUTINE: No
+PRE-TRANSPORT RTN: 
+
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+
+44          HOSPITAL LOCATION              YES   YES   NO                  NO
+Partial DD: subDD: 44         fld: 113059111
+                              fld: 113059112
+                              fld: 113059114
+                              fld: 113059115
+                              fld: 113059116
+            subDD: 44.113059
+
+200         NEW PERSON                     YES   YES   NO                  NO
+Partial DD: subDD: 200.113059
+
+113059001   C0P XML TEMPLATE               YES   YES   NO                  
+
+113059002   C0P WS ACCT                    YES   YES   NO                  
+
+113059003   C0P WEB SERVICE                YES   YES   NO                  
+
+1130590010  FIRST DATABANK DRUGS           YES   YES   NO                  
+
+1130590010.002C0P RXNORM FDB VUID MAPPING  YES   YES   NO                  
+
+1130590011.001RXNORM CONCEPTS C0P          YES   YES   NO                  
+
+PRINT TEMPLATE:                                ACTION:
+   C0P MAPPED BRAND DRUGS VANAME    FILE #1130590010.002SEND TO SITE
+
+SORT TEMPLATE:                                 ACTION:
+   C0P BRAND NAME ANALYSIS    FILE #1130590010.002SEND TO SITE
+   C0P SORT BY RXNCUI    FILE #1130590010.002     SEND TO SITE
+
+INPUT TEMPLATE:                                ACTION:
+   C0P ERX ENTER EDIT LOCATION    FILE #44        SEND TO SITE
+   C0P SUPERVISING DOCTOR    FILE #200            SEND TO SITE
+
+FORM:                                          ACTION:
+   C0P ENTER SUBSCRIBER    FILE #200              SEND TO SITE
+
+BULLETIN:                                      ACTION:
+   C0P EXTERNAL DRUG NOT FOUND                    SEND TO SITE
+
+MAIL GROUP:                                    ACTION:
+   ERX HELP DESK                                  SEND TO SITE
+
+HELP FRAME:                                    ACTION:
+   C0P SETUP HELP                                 SEND TO SITE
+   C0P SETUP HELP2                                SEND TO SITE
+
+ROUTINE:                                       ACTION:
+   C0PALGY1                                       SEND TO SITE
+   C0PALGY2                                       SEND TO SITE
+   C0PALGY3                                       SEND TO SITE
+   C0PCPRS1                                       SEND TO SITE
+   C0PCUR                                         SEND TO SITE
+   C0PEREW                                        SEND TO SITE
+   C0PEWD1                                        SEND TO SITE
+   C0PEWD2                                        SEND TO SITE
+   C0PEWD4                                        SEND TO SITE
+   C0PEWDU                                        SEND TO SITE
+   C0PKIDS                                        SEND TO SITE
+   C0PLKUP                                        SEND TO SITE
+   C0PLOAD                                        SEND TO SITE
+   C0PMAIN                                        SEND TO SITE
+   C0PNVA                                         SEND TO SITE
+   C0PPAT                                         SEND TO SITE
+   C0PRECON                                       SEND TO SITE
+   C0PREFIL                                       SEND TO SITE
+   C0PRXNRD                                       DELETE AT SITE
+   C0PSMEDS                                       SEND TO SITE
+   C0PSUB                                         SEND TO SITE
+   C0PTRXN                                        SEND TO SITE
+   C0PWPS                                         SEND TO SITE
+   C0PWS1                                         SEND TO SITE
+   C0PWS2                                         SEND TO SITE
+   C0PXEWD                                        SEND TO SITE
+
+OPTION:                                        ACTION:
+   C0P ACCOUNT EDIT                               SEND TO SITE
+   C0P ERX BATCH                                  SEND TO SITE
+   C0P ERX ORDER RPC                              SEND TO SITE
+   C0P ERX PULLBACK                               SEND TO SITE
+   C0P LIST SUBSCRIBERS                           DELETE AT SITE
+   C0P LOCATION EDIT                              SEND TO SITE
+   C0P MAIN                                       DELETE AT SITE
+   C0P MAPPED BRANDED DRUGS                       SEND TO SITE
+   C0P MAPPING MENU                               SEND TO SITE
+   C0P SET-UP HELP                                SEND TO SITE
+   C0P SUBSCRIBER EDIT                            SEND TO SITE
+   C0P SUBSCRIBER STATUS INQUIRE                  SEND TO SITE
+   C0P SUPERVISING DOCTOR                         DELETE AT SITE
+   C0P SUPERVISING DOCTOR EDIT                    SEND TO SITE
+   C0PMENU                                        SEND TO SITE
+
+SECURITY KEY:                                  ACTION:
+   C0PZMENU                                       SEND TO SITE
+   C0PZMGR                                        SEND TO SITE
+
+REMOTE PROCEDURE:                              ACTION:
+   C0P ERX ALERT RPC                              SEND TO SITE
+   C0P ERX ORDER RPC                              SEND TO SITE
+   C0P ERX PULLBACK                               SEND TO SITE
+   ORWPS COVER                                    SEND TO SITE
+   ORWPS DETAIL                                   SEND TO SITE
+
+REQUIRED BUILDS:                               ACTION:
+   CCD/CCR GENERATION UTILITIES 1.2               Don't install, leave global
+

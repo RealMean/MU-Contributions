@@ -1,0 +1,31 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: OCT 18, 2012                      Designation: C0P*1*3  TEST v
+Package : ORO ERX E-PRESCRIBING             Priority   : MANDATORY
+Version : 1                                 Status     : UNDER DEVELOPMENT
+=============================================================================
+
+Subject:  First Databank files for ePrescribing
+
+Category:  DATA DICTIONARY
+           OTHER
+
+Description:
+===========
+ 
+
+
+Routine Information:
+====================
+
+
+No routines included.
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   JUN  8,2012
+  Completed By:                        Date Completed:   
+  Released By :                        Date Released :   
+=============================================================================
+

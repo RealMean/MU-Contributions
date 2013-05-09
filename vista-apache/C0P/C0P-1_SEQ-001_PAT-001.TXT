@@ -1,0 +1,160 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: OCT 18, 2012                      Designation: C0P*1*1
+Package : ORO ERX E-PRESCRIBING             Priority   : MANDATORY
+Version : 1                                 Status     : COMPLETE/NOT RELEASED
+=============================================================================
+
+Subject:  New Crop Web Services XML Data
+
+Category:  DATA DICTIONARY
+           OTHER
+
+Description:
+===========
+ 
+$TXT Created by MANAGER,SYSTEM at WVEHR309.OPENFORUM.OPENSOURCEVISTA.NET  (KIDS)
+ on Monday, 05/21/12 at 13:44
+ 
+Description:
+============
+This build contains copyrighted content. Only use if you have an 
+agreement with Oroville Hospital and New Crop.
+ 
+Build originally produced by George Lilly
+on Mar 31st 2011, containing New
+Crop Templates and First DataBank Drugs.
+ 
+This build is prepared for release with WorldVistA 2.0.
+ 
+This build contains two files:
+C0P XML TEMPLATE with DATA
+C0P WEB SERVICE with DATA
+ 
+The XML Template File contains SOAP XML Templates for use with the Web 
+Service.
+ 
+The Web Service File contains the configuration of the web service to use 
+with the SOAP messages.
+ 
+This build doesn't have any technical dependencies, but C0P 1.0 needs this
+data in order to operate.
+  
+ Components Exported With Patch: 
+ -------------------------------
+  
+ The following is a list of files/fields included in this patch:
+  
+ Field Name                 (Number)     File Name             (Number)
+ -----------------------------------     ------------------------------
+ ALL                                     C0P XML TEMPLATE       113059001
+ ALL                                     C0P WEB SERVICE        113059003
+ 
+ Both Files come with Pre-Configured Data and should not be edited by 
+sites.
+ 
+ Documentation Retrieval:
+ ------------------------
+ Documentation is not available beyond this file. 
+  
+ File Description                             File Name            FTP 
+ -------------------------------------------------------------------------
+ <None at this moment>
+  
+  
+ Test Sites:
+ -----------
+ <None at this moment>              
+ The contents of this patch are in production at Oroville Hospital, 
+ although the patch itself was not tested there.
+  
+ Pre/Post Installation Overview:
+ -------------------------------
+ No Environment Routines are shipped. 
+  
+        ================INSTALLATION INSTRUCTIONS =================
+  
+ Install Time - less than 1 minute.
+  
+ ************ PRE-INSTALLATION INSTRUCTIONS **************
+ 
+ *********************************************************
+  
+ 1.  LOAD TRANSPORT GLOBAL 
+     ---------------------
+     Choose the PackMan message containing this patch and invoke the 
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.  
+  
+ 2.  START UP KIDS 
+     -------------
+     Start up the Kernel Installation and Distribution System Menu 
+     [XPD MAIN]: 
+    
+          Edits and Distribution ...  
+          Utilities ...  
+          Installation ...  
+    
+ Select Kernel Installation & Distribution System Option: INStallation 
+                                                          ---
+          Load a Distribution 
+          Print Transport Global 
+          Compare Transport Global to Current System 
+          Verify Checksums in Transport Global 
+          Install Package(s) 
+          Restart Install of Package(s) 
+          Unload a Distribution 
+          Backup a Transport Global 
+    
+ Select Installation Option: 
+  
+ 3.  Select Installation Option: 
+     ---------------------------
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+            NAME, enter C0P*1.0*1):
+       
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+  
+ 4.  Select Installation Option: Install Package(s) 
+                                 ------------------
+     **This is the step to start the installation of this KIDS patch: 
+    
+    a.  Choose the Install Package(s) option to start the patch install
+        and enter "C0P*1.0*1" at the INSTALL NAME prompt.
+    b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of 
+        Install? NO//'  answer NO
+    c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install? 
+        NO//'  answer NO
+    d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options, 
+        and Protocols? NO//'  answer NO
+  
+ ************ POST-INSTALLATION INSTRUCTIONS **************
+ There are no post installation instructions. Remember to install patches 
+2 and 3 as well for C0P for the package to be operational.
+ 
+ 
+ --------------------------------------------------
+
+
+Routine Information:
+====================
+
+
+No routines included.
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   MAY  3,2012
+  Completed By:   LILLY,GEORGE         Date Completed:   JUN 13,2012
+  Released By :                        Date Released :   
+=============================================================================
+
